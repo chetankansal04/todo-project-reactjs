@@ -1,4 +1,4 @@
-function Detail() {
+function EnterToDo() {
   return (
     <div className="container text-center">
       <div className="row sub-row">
@@ -18,4 +18,4 @@ function Detail() {
   );
 }
 
-export default Detail;
+export default EnterToDo;
