@@ -1,4 +1,4 @@
-import AppName from "./Appname";
+import AppName from "./Components/Appname";
 import EnterToDo from "./Components/EnterToDo";
 import Tasks from "./Components/Tasks";
 import "./App.css";
