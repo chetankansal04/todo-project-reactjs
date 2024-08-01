@@ -1,0 +1,13 @@
+
+input{
+  width:100%
+}
+.sub-row{
+  margin: 10px;
+}
+.sub-button{
+  min-width:  100px;
+}
+.task{
+  text-align: left;
+}
