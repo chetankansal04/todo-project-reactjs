@@ -4,6 +4,7 @@ const Tasks = ({ tasks, onDeleteClick }) => {
     <div className="item-container">
       {tasks.map((task) => (
         <Task
+          key={task.name}
           taskDate={task.dueDate}
           taskName={task.name}
           onDeleteClick={onDeleteClick}
