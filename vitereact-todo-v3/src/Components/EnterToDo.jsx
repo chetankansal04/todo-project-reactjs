@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { IoIosAddCircleOutline } from "react-icons/io";
 
 function EnterToDo({ onNewItem }) {
-  const [taskName, setTaskName] = useState();
-  const [DueDate, setDueDate] = useState();
+  const [taskName, setTaskName] = useState("");
+  const [dueDate, setDueDate] = useState("");
   const handleNameChange = (event) => {
     setTaskName(event.target.value);
   };
@@ -10,7 +11,7 @@ function EnterToDo({ onNewItem }) {
     setDueDate(event.target.value);
   };
   const handleAddButtonClick = () => {
-    onNewItem(taskName, DueDate);
+    onNewItem(taskName, dueDate);
     setDueDate("");
     setTaskName("");
   };
@@ -21,12 +22,17 @@ function EnterToDo({ onNewItem }) {
         <div className="col-6">
           <input
             type="text"
-            placeholder="Enter ToDo Here" value={taskName}
+            placeholder="Enter ToDo Here"
+            value={taskName}
             onChange={handleNameChange}
           ></input>
         </div>
         <div className="col-4">
-          <input type="date" value={DueDate} onChange={handleDateChange}></input>
+          <input
+            type="date"
+            value={dueDate}
+            onChange={handleDateChange}
+          ></input>
         </div>
         <div className="col-2">
           <button
@@ -34,7 +40,7 @@ function EnterToDo({ onNewItem }) {
             className="btn btn-success sub-button"
             onClick={handleAddButtonClick}
           >
-            Add
+            <IoIosAddCircleOutline />
           </button>
         </div>
       </div>

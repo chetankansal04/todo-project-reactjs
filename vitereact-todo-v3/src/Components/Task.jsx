@@ -1,3 +1,5 @@
+import { RiDeleteBin5Fill } from "react-icons/ri";
+
 function Task({ taskName, taskDate, onDeleteClick }) {
   return (
     <div className="container">
@@ -12,7 +14,7 @@ function Task({ taskName, taskDate, onDeleteClick }) {
               onDeleteClick(taskName);
             }}
           >
-            Delete
+            <RiDeleteBin5Fill />
           </button>
         </div>
       </div>
